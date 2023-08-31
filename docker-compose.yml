@@ -2,7 +2,7 @@ version: "3"
 services:
   nodeserver:
     build:
-      context: ./dashboard
+      context: ./app
     ports:
       - "85:5001"
   nginx:
