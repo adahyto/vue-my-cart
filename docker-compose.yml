@@ -4,7 +4,7 @@ services:
     build:
       context: ./app
     ports:
-      - "85:5001"
+      - "86:5001"
   nginx:
     restart: always
     build:
