@@ -8,5 +8,8 @@
     border: 1px solid black;
     border-radius: 12px;
     gap: 15px;
+    .v-input input {
+      text-align: center;
+    }
   }
 }
