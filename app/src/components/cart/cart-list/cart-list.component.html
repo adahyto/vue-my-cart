@@ -1,10 +1,21 @@
 <div>
   <v-subheader
-    >{{ items.length ? "Clear list" : "No items added" }}
-    <v-btn v-if="items.length" icon color="grey" @click="clear()"> </v-btn>
+    >{{ items.length ? "" : "No items added" }}
+    <div v-if="items.length">
+      <v-btn color="grey" @click="clear()">Clear list</v-btn>
+      <p class="total">
+        <i>In total:</i> {{ items.length }} items for {{ calcSum() }}
+      </p>
+    </div>
   </v-subheader>
-  <v-simple-table class="lighten-5">
-    <thead></thead>
+  <v-simple-table dense class="lighten-5">
+    <thead>
+      <tr>
+        <td>Item</td>
+        <td>Quantity</td>
+        <td>Price</td>
+      </tr>
+    </thead>
     <tbody>
       <tr v-for="item in items">
         <td>
@@ -28,8 +39,4 @@
       </tr>
     </tbody>
   </v-simple-table>
-  <div v-if="items.length">
-    <v-divider></v-divider>
-    <p class="total"><i>In total:</i> {{ calcSum() }}</p>
-  </div>
 </div>
