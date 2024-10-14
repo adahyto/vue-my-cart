@@ -1,14 +1,14 @@
 <div>
-  <v-subheader
-    >{{ items.length ? "" : "No items added" }}
-    <div v-if="items.length">
-      <v-btn color="grey" @click="clear()">Clear list</v-btn>
-      <p class="total">
-        <i>In total:</i> {{ items.length }} items for {{ calcSum() }}
-      </p>
-    </div>
+  <v-subheader v-if="!items.length" style="justify-content: center;">
+    No items added
   </v-subheader>
-  <v-simple-table dense class="lighten-5">
+  <dv-subheader v-if="items.length">
+    <v-btn color="grey" @click="clear()">Clear list</v-btn>
+    <p class="total">
+      <i>In total:</i> {{ items.length }} items for {{ calcSum() }}
+    </p>
+  </v-subheader>
+  <v-simple-table v-if="items.length" dense class="lighten-5">
     <thead>
       <tr>
         <td>Item</td>
