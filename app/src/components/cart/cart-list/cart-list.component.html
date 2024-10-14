@@ -3,7 +3,7 @@
     No items added
   </v-subheader>
   <dv-subheader v-if="items.length">
-    <v-btn color="grey" @click="clear()">Clear list</v-btn>
+    <v-btn @click="clear()">Clear list</v-btn>
     <p class="total">
       <i>In total:</i> {{ items.length }} items for {{ calcSum() }}
     </p>
