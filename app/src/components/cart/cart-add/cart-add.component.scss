@@ -8,12 +8,8 @@
     border: 1px solid black;
     border-radius: 12px;
     gap: 15px;
-  }
-}
-
-.add-btn {
-  .v-btn__content {
-    font-size: 35px;
-    font-weight: 300;
+    .v-text-field__slot {
+      text-align: center;
+    }
   }
 }
