@@ -1,12 +1,20 @@
 .cart-add {
   &_form {
-    padding: 20px;
+    padding: 0 20px;
     align-items: center;
     display: flex;
     justify-content: space-between;
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 12px;
+    gap: 15px;
   }
 }
 
 .add-btn {
   margin-top: -15px;
+  span {
+    font-size: 35px;
+    font-weight: 300;
+  }
 }
