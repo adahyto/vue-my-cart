@@ -3,7 +3,7 @@
     >{{ items.length ? "Clear list" : "No items added" }}
     <v-btn v-if="items.length" icon color="grey" @click="clear()"> </v-btn>
   </v-subheader>
-  <v-simple-table class="grey lighten-5">
+  <v-simple-table class="lighten-5">
     <thead></thead>
     <tbody>
       <tr v-for="item in items">
