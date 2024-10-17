@@ -21,3 +21,6 @@
     width: 40px;
   }
 }
+.form-element >>> input:focus {
+  outline-color: black;
+}
