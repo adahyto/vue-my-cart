@@ -9,8 +9,12 @@
   &__controls {
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
     width: 100%;
     justify-content: space-between;
+  }
+  &__controls >>> p {
+    margin: 0;
   }
 }
 .controls-button {
