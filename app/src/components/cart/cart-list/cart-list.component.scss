@@ -47,4 +47,10 @@
   &__price {
     margin: 0;
   }
+  .form-element >>> input {
+    caret-color: black;
+  }
+  .v-input--is-focused {
+    border-color: black;
+  }
 }
