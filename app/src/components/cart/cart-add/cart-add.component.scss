@@ -22,6 +22,6 @@
     width: 40px;
   }
 }
-.v-input--is-focused .v-input__slot {
-  border-bottom-color: black !important;
+.v-input--is-focused {
+  border-color: black;
 }
