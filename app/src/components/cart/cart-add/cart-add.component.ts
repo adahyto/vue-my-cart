@@ -6,7 +6,7 @@ import { Item } from '@/models/item.model';
 export default class CartAddComponent extends Vue {
   item: Item = {
     id: this.randomId(),
-    name: 'item\'s name',
+    name: '',
     quantity: 1,
     price: 0
   };
@@ -15,7 +15,7 @@ export default class CartAddComponent extends Vue {
     this.$store.dispatch('addItem', this.item);
     this.item = {
       id: this.randomId(),
-      name: 'item\'s name',
+      name: '',
       quantity: 1,
       price: 0
     };
