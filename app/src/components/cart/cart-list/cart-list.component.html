@@ -1,9 +1,9 @@
 <div class="table-wrapper">
-  <div class="table-controls">
+  <div class="table-header">
     <div v-if="!items.length">
-      <p>No items added</p>
+      <p class="table-controls--text-centerd">No items added</p>
     </div>
-    <div v-if="items.length">
+    <div v-if="items.length" class="table-header__controls">
       <v-btn @click="clear()">Clear list</v-btn>
       <p class="total">
         <i>In total:</i> {{ items.length }} items for {{ calcSum() }}
