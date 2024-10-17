@@ -23,7 +23,7 @@
   &__name {
     width: 200px;
   }
-  &__input-wrapper,
+  &__input-wrapper >>> input,
   &__price {
     width: 40px;
   }
