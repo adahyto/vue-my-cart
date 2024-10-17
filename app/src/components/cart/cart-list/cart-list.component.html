@@ -1,24 +1,22 @@
-<div class="table-wrapper">
-  <div class="table-header">
+<div class="cart-wrapper">
+  <div class="cart-header">
     <div v-if="!items.length">
-      <p class="table-header--text-centered">No items added</p>
+      <p class="tacartble-header--text-centered">No items added</p>
     </div>
-    <div v-if="items.length" class="table-header__controls">
+    <div v-if="items.length" class="cart-header__controls">
       <v-btn @click="clear()">Clear list</v-btn>
       <p class="total">
         <i>In total:</i> {{ items.length }} items for {{ calcSum() }}
       </p>
     </div>
   </div>
-  <div v-if="items.length">
-    <div v-for="item in items">
-      <h4>{{ item.name }}</h4>
-      <div>
+  <div v-if="items.length" class="cart">
+    <div v-for="item in items" class="cart-item">
+      <h4 class="cart-item__name">{{ item.name }}</h4>
+      <div class="cart-item__input-wrapper">
         <input type="number" v-model="item.quantity" @change="editItem(item)" />
       </div>
-      <div>
-        <p>{{ item.quantity * item.price }}</p>
-      </div>
+      <p class="cart-item__price">{{ item.quantity * item.price }}</p>
       <div>
         <v-btn icon color="grey" @click="removeItem(item.id)">
           <v-icon>mdi-delete-circle-outline</v-icon>

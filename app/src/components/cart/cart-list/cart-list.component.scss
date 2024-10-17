@@ -1,7 +1,7 @@
-.table-wrapper {
+.cart-wrapper {
   width: 350px;
 }
-.table-header {
+.cart-header {
   &--text-centered {
     text-align: center;
   }
@@ -12,10 +12,19 @@
     justify-content: space-between;
   }
 }
-
-.cart-list {
-  &_item {
-    display: flex;
-    align-items: center;
+.cart,
+.cart-item {
+  width: 100%;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__name {
+    width: 200px;
+  }
+  &__input-wrapper,
+  &__price {
+    width: 40px;
   }
 }
