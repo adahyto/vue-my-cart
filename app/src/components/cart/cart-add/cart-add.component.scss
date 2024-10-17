@@ -1,6 +1,6 @@
 .cart-add {
   width: 350px;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 12px;
   padding: 0 20px;
   &__form {
@@ -8,5 +8,16 @@
     display: flex;
     justify-content: space-between;
     gap: 15px;
+  }
+}
+.form-element {
+  &__button {
+    background-color: black;
+  }
+  &--centered {
+    text-align: center;
+  }
+  &--w40 {
+    width: 40px;
   }
 }

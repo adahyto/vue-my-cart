@@ -1,17 +1,22 @@
 <div class="cart-add">
   <v-form class="cart-add__form">
-    <div class="cart-add__form-element">
+    <div class="form-element">
       <v-text-field v-model="item.name" required> </v-text-field>
     </div>
-    <div class="cart-add__form-element">
+    <div class="form-element form-element--centered form-element--w40">
       <v-text-field v-model="item.quantity" required></v-text-field>
     </div>
     <span>x</span>
-    <div class="cart-add__form-element">
+    <div class="form-element form-element--centered form-element--w40">
       <v-text-field v-model="item.price" required></v-text-field>
     </div>
-    <div class="cart-add__form-element">
-      <v-btn icon color="white" @click="addNewItem">
+    <div class="form-element">
+      <v-btn
+        icon
+        color="white"
+        class="form-element__button"
+        @click="addNewItem"
+      >
         +
       </v-btn>
     </div>
