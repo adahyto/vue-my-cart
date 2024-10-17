@@ -12,7 +12,7 @@ export default class CartAddComponent extends Vue {
   };
 
   addNewItem(): void {
-    this.$store.dispatch('addItem', this.item);
+    this.$store.dispatch('addItem', this.item.name ? this.item : { ...this.item, name: 'Unnamed item' });
     this.item = {
       id: this.randomId(),
       name: '',
