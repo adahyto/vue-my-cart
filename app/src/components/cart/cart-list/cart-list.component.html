@@ -6,7 +6,7 @@
     <div v-if="items.length" class="cart-header__controls">
       <button class="controls-button" @click="clear()">CLEAR LIST</button>
       <p>
-        <span>{{ items.length }}</span> items for <span>{{ calcSum() }}</span>
+        Items worth: <span>{{ calcSum() }}</span>
       </p>
     </div>
     <hr v-if="items.length" />
