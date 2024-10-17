@@ -7,7 +7,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+    gap: 20px;
   }
 }
 .form-element {
@@ -15,11 +15,12 @@
     background-color: black;
   }
   &__button >>> span {
-    margin-top: -3px;
+    margin-top: -2px;
   }
   &--centered >>> input {
     text-align: center;
     caret-color: black;
+    padding: 4px 0 2px;
   }
   &--w40 {
     width: 40px;
