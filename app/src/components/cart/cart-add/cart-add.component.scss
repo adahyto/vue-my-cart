@@ -2,7 +2,7 @@
   width: 350px;
   border: 2px solid black;
   border-radius: 12px;
-  padding: 5px 20px;
+  padding: 10px 20px 5px;
   &__form {
     align-items: center;
     display: flex;
@@ -12,6 +12,7 @@
 }
 .form-element {
   &__button {
+    margin-top: -5px;
     background-color: black;
   }
   &__button >>> span {
