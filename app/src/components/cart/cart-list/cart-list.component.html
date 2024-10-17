@@ -3,7 +3,7 @@
     <div v-if="!items.length">
       <p class="cart-header--text-centered">No items added</p>
     </div>
-    <div v-if="items.length">
+    <div v-if="items.length" class="cart-header__controls">
       <v-btn variant="text" @click="clear()">Clear list</v-btn>
       <p class="total">
         <i>In total:</i> {{ items.length }} items for {{ calcSum() }}
