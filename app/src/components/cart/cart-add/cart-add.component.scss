@@ -1,12 +1,12 @@
 .cart-add {
-  &_form {
-    padding: 0 20px;
+  width: 350px;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 0 20px;
+  &__form {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    width: 350px;
-    border: 1px solid black;
-    border-radius: 12px;
     gap: 15px;
   }
 }
