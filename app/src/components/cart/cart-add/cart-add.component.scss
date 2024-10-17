@@ -14,10 +14,8 @@
   &__button {
     background-color: black;
   }
-  &--centered {
-    input {
-      text-align: center;
-    }
+  &--centered >>> input {
+    text-align: center;
   }
   &--w40 {
     width: 40px;
