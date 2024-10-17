@@ -43,7 +43,8 @@
     border-bottom: 0.5px solid grey;
   }
   &__input-wrapper >>> input:focus-visible {
-    outline-color: black;
+    outline: none;
+    border-bottom: 1px solid black;
   }
   &__input-wrapper >>> input,
   &__price {
