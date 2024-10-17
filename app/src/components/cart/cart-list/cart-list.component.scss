@@ -39,6 +39,9 @@
     width: 140px;
     font-weight: 500;
   }
+  &__input-wrapper >>> input {
+    border-bottom: 0.5px solid grey;
+  }
   &__input-wrapper >>> input,
   &__price {
     width: 30px;
