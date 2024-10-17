@@ -1,13 +1,16 @@
 <div class="table-wrapper">
-  <v-subheader v-if="!items.length" style="justify-content: center;">
-    No items added
-  </v-subheader>
-  <v-subheader v-if="items.length">
-    <v-btn @click="clear()">Clear list</v-btn>
-    <p class="total">
-      <i>In total:</i> {{ items.length }} items for {{ calcSum() }}
-    </p>
-  </v-subheader>
+  <div class="table-controls">
+    <div v-if="!items.length">
+      <p>No items added</p>
+    </div>
+    <div v-if="items.length">
+      <v-btn @click="clear()">Clear list</v-btn>
+      <p class="total">
+        <i>In total:</i> {{ items.length }} items for {{ calcSum() }}
+      </p>
+    </div>
+  </div>
+
   <v-simple-table v-if="items.length" dense class="lighten-5">
     <thead>
       <tr>
