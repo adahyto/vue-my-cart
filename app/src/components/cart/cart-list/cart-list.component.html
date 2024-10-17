@@ -9,7 +9,7 @@
         <i>In total:</i> {{ items.length }} items for {{ calcSum() }}
       </p>
     </div>
-    <hr />
+    <hr v-if="items.length" />
   </div>
   <div v-if="items.length" class="cart">
     <div v-for="item in items" class="cart-item">
