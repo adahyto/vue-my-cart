@@ -35,12 +35,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  span {
-    margin-right: 15px;
-    margin-left: 10px;
-  }
   &__name {
-    width: 200px;
+    width: 140px;
     font-weight: 500;
   }
   &__input-wrapper >>> input,
