@@ -14,6 +14,9 @@
   &__button {
     background-color: black;
   }
+  &__button >>> span {
+    margin-top: -3px;
+  }
   &--centered >>> input {
     text-align: center;
     caret-color: black;
