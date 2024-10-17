@@ -20,7 +20,7 @@ export default class CartListComponent extends Vue {
     this.items.forEach(item => {
       sum = sum + item.price * item.quantity
     });
-    return sum;
+    return Number(sum.toFixed(2));
   }
   editItem(item: Item): void {
     this.$store.dispatch('editItem', item);
