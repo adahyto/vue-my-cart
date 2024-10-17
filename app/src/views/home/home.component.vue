@@ -17,6 +17,6 @@ export default class HomeComponent extends Vue {}
  
 <style scoped lang="css">
   .cart-wrapper {
-    margin-top: 85px;
+    margin-top: 75px;
   }
 </style>
