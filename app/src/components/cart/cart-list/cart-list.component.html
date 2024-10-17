@@ -10,36 +10,20 @@
       </p>
     </div>
   </div>
-
-  <v-simple-table v-if="items.length" dense width="350px" class="lighten-5">
-    <thead>
-      <tr>
-        <td>Item</td>
-        <td>Quantity</td>
-        <td>Price</td>
-      </tr>
-    </thead>
-    <tbody>
-      <tr v-for="item in items">
-        <td>
-          <span>{{ item.name }}</span>
-        </td>
-        <td>
-          <input
-            type="number"
-            v-model="item.quantity"
-            @change="editItem(item)"
-          />
-        </td>
-        <td>
-          <span>{{ item.quantity * item.price }}</span>
-        </td>
-        <td>
-          <v-btn icon color="grey" @click="removeItem(item.id)">
-            <v-icon>mdi-delete-circle-outline</v-icon>
-          </v-btn>
-        </td>
-      </tr>
-    </tbody>
-  </v-simple-table>
+  <div v-if="items.length">
+    <div v-for="item in items">
+      <h4>{{ item.name }}</h4>
+      <div>
+        <input type="number" v-model="item.quantity" @change="editItem(item)" />
+      </div>
+      <div>
+        <p>{{ item.quantity * item.price }}</p>
+      </div>
+      <div>
+        <v-btn icon color="grey" @click="removeItem(item.id)">
+          <v-icon>mdi-delete-circle-outline</v-icon>
+        </v-btn>
+      </div>
+    </div>
+  </div>
 </div>
