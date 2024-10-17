@@ -15,7 +15,9 @@
     background-color: black;
   }
   &--centered {
-    text-align: center;
+    input {
+      text-align: center;
+    }
   }
   &--w40 {
     width: 40px;
