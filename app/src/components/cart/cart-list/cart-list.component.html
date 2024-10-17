@@ -17,6 +17,7 @@
       <div class="cart-item__input-wrapper">
         <input type="number" v-model="item.quantity" @change="editItem(item)" />
       </div>
+      <span>for</span>
       <p class="cart-item__price">{{ item.quantity * item.price }}</p>
       <div>
         <v-btn icon color="grey" @click="removeItem(item.id)">
