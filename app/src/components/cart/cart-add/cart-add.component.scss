@@ -16,11 +16,12 @@
   }
   &--centered >>> input {
     text-align: center;
+    caret-color: black;
   }
   &--w40 {
     width: 40px;
   }
 }
-.form-element >>> input:focus {
-  outline-color: black;
+.v-input--is-focused .v-input__slot {
+  border-bottom-color: black !important;
 }
