@@ -19,12 +19,14 @@
   }
   &--centered >>> input {
     text-align: center;
-    caret-color: black;
-    padding: 4px 0 2px;
   }
   &--w40 {
     width: 40px;
   }
+}
+.form-element >>> input {
+  caret-color: black;
+  padding: 4px 0 2px;
 }
 .v-input--is-focused {
   border-color: black;
