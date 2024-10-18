@@ -20,8 +20,11 @@ export default class HomeComponent extends Vue {}
   .cart-wrapper {
     margin-top: 75px;
   }
-  .footer {
+  footer {
     background:black;
-    color: white;
+    a {
+      color: white;
+      text-decoration: none;
+    }
   }
 </style>
