@@ -21,9 +21,12 @@ export default class HomeComponent extends Vue {}
     margin-top: 75px;
   }
   footer {
-    background:black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 10px;
     a {
-      color: white;
+      color: black;
       text-decoration: none;
     }
   }
