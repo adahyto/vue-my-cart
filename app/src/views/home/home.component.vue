@@ -4,7 +4,7 @@
     <div class="cart-wrapper">
       <c-cart></c-cart>
     </div>
-    <footer><a href="https://doner.cloud">doner.cloud</a></footer>
+    <footer><a href="https://doner.cloud" target="_blank">doner.cloud</a></footer>
   </v-app>
 </template>
  
