@@ -4,7 +4,7 @@
     <div class="cart-wrapper">
       <c-cart></c-cart>
     </div>
-    <c-footer></c-footer>
+    <footer><a href="https://doner.cloud" target="_blank">doner.cloud</a></footer>
   </v-app>
 </template>
  
@@ -19,5 +19,16 @@ export default class HomeComponent extends Vue {}
 <style scoped lang="css">
   .cart-wrapper {
     margin-top: 75px;
+  }
+  footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 12px;
+    a {
+      color: black;
+      text-decoration: none;
+    }
   }
 </style>
