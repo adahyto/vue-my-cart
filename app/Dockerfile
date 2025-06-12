@@ -1,8 +1,9 @@
 FROM node:10 AS build
 
-WORKDIR /usr/src/app
+WORKDIR /
 
-COPY package.json package-lock.json ./
+COPY package.json .
+COPY package-lock.json .
 
 RUN npm cache clean --force
 RUN npm i
